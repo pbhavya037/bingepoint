@@ -17,7 +17,7 @@ const Serieslist = (prop) => {
     }
     return (
         <>
-            <div className=" bg-blue-200 shadow-lg xs:w-24 hover:origin-center hover:rotate-6 duration-300 ease-in-out overflow:hidden rounded-lg relative cursor-pointer" onClick={handleClick}>
+            <div className=" bg-blue-200 shadow-lg xs:w-24 hover:shadow-md hover:scale-90 duration-300 ease-in-out overflow:hidden rounded-lg relative cursor-pointer" onClick={handleClick}>
                 <img src={poster ? `${img_300}/${poster}` : unavailable} alt={title} className="w-full m-0 rounded-t-lg " />
                 <div className="p-2">
                     <p>{title}</p>
@@ -25,7 +25,6 @@ const Serieslist = (prop) => {
                         <p>TV Series</p>
                         <p>{date}</p>
                     </span>
-                    {/* parseFloat(vote).toFixed(2) */}
                 </div>
                 <span className=" absolute bg-blue-800 text-blue-50 rounded-full m-2 px-2 top-0">{parseFloat(vote).toFixed(1)}</span>
             </div>

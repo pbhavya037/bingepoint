@@ -42,7 +42,7 @@ const Series = () => {
 
             <Genre type="tv" gen={gen} setGen= {setGen} selgen={selgen} setSelgen = {setSelgen}/>
 
-            <div className=' gap-8 justify-around grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-14 lg:p-20 md:p-12 '>
+            <div className=' gap-11 justify-around grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-14 lg:p-20 md:p-12 '>
                 {
                     slist && slist.map((m) => <Serieslist
                         key={m.id}

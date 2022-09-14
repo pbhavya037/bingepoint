@@ -60,7 +60,7 @@ const Search = () => {
                 </div>
             </form>
 
-            <div className=' gap-8 justify-around grid mt-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-14 lg:p-20 md:p-12 '>
+            <div className=' gap-14 justify-around grid mt-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-14 lg:p-20 md:p-12 '>
                 {
                     mlist && mlist.map((m) => <Trendlist
                         key={m.id}

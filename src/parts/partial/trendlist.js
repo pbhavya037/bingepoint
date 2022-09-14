@@ -19,7 +19,7 @@ const Trendlist = (prop) => {
     }
 
     return (
-        <div className=" hover:origin-center hover:rotate-6 duration-300 ease-in-out bg-blue-200 shadow-lg xs:w-24 overflow:hidden cursor-pointer rounded-lg relative " onClick={handleClick} >
+        <div className=" hover:shadow-md hover:scale-90 duration-300 ease-in-out bg-blue-200 shadow-lg xs:w-24 overflow:hidden cursor-pointer rounded-lg relative " onClick={handleClick} >
             <img src={poster ? `${img_300}/${poster}` : unavailable} alt={title} className="w-full m-0 rounded-t-lg " />
 
             <div className="p-2">

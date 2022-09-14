@@ -20,7 +20,7 @@ const Movielist = (prop) => {
     }
     return (
         <>
-        <div className=" bg-blue-200 shadow-lg xs:w-24 hover:origin-center hover:rotate-6 duration-300 ease-in-out overflow:hidden rounded-lg cursor-pointer relative" onClick={handleClick}>
+        <div className=" bg-blue-200 shadow-lg xs:w-24  hover:shadow-md hover:scale-90 duration-300 ease-in-out overflow:hidden rounded-lg cursor-pointer relative" onClick={handleClick}>
             <img src={poster ? `${img_300}/${poster}` : unavailable} alt={title} className="w-full m-0 rounded-t-lg " />
             <div className="p-2">
                 <p>{title}</p>

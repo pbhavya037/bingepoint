@@ -73,9 +73,9 @@ const Modal = (prop) => {
                             <span className="text-gray-700 italic">{data.tagline}</span>
                             <p className="text-justify text-sm mb-2 ">{overview}</p>
                         
-                        <div className="flex flex-wrap overflow-y-scroll h-40 md:h-52 shadow-inner border-black border-2 p-0 overflow-auto rounded-md">
+                        <div className="grid grid-cols-3 gap-2 md:gap-3 lg:gap-2 md:grid-cols-3 lg:grid-cols-4  overflow-y-scroll h-40 md:h-52 shadow-inner border-black border-2 p-0 overflow-auto rounded-md">
                             {credits && credits.map((c) => (
-                                <div className = " w-28 md:w32 border-2 rounded-md shadow-sm m-2" >
+                                <div className = " w-2full border-2 rounded-md shadow-sm m-2" >
                                     <img
                                         src={c.profile_path? `${img_300}/${c.profile_path}` : noPicture}
                                         alt="Image"

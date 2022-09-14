@@ -33,7 +33,7 @@ const Genre = (prop) => {
  
     return (
         <>
-            <div className=" m-2 flex flex-wrap justify-between " >
+            <div className=" m-2 flex flex-wrap  " >
                     {selgen && selgen.map((g) => (
                          <button key = {g.id} className="m-2 border-2 border-white hover:border-slate-900 px-3 rounded-full bg-blue-600 text-white "  onClick={() => {
                             handleDel(g)}} >

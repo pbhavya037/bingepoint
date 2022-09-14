@@ -43,7 +43,7 @@ const Movies = () => {
             <h1 className="font-bold text-2xl p-4 ">Movies 🎥</h1>
             </div>
             <Genre type="movie" gen={gen} setGen= {setGen} selgen={selgen} setSelgen = {setSelgen}/>;
-            <div className=' gap-8 justify-around grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-14 lg:p-20 md:p-12 '>
+            <div className=' gap-11 justify-around grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-14 lg:p-20 md:p-12 '>
                 {
                     mlist && mlist.map((m) => <Movielist
                         key={m.id}
